@@ -6,10 +6,14 @@
 /* Components */
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
+@import "components/screen-header.css";
 
 /* Screens */
 @import "screens/login.css";
+@import "screens/friend.css";
 
 body {
   font-family: "Noto Sans", sans-serif;
+  padding-top: 30px;
+  color: #2f363e;
 }
