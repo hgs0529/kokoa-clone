@@ -18,13 +18,15 @@
 @import "screens/find.css";
 @import "screens/more.css";
 @import "screens/settings.css";
+@import "screens/chat.css";
 
 body {
   font-family: "Noto Sans", sans-serif;
-  padding-top: 30px;
+  margin-top: 30px;
   color: #2f363e;
 }
 
 .main-screen {
-  margin: 0px var(--horizontal-space);
+  margin-right: var(--horizontal-space);
+  margin-left: var(--horizontal-space);
 }
