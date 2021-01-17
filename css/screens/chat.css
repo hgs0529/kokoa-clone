@@ -32,10 +32,24 @@
   margin-bottom: 25px;
 }
 
+@keyframes fadeIn1 {
+  from {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .message-row {
+  opacity: 0;
   width: 100%;
   display: flex;
   margin-bottom: 25px;
+  animation: fadeIn1 0.6s linear forwards;
+  animation-delay: 0.2s;
 }
 
 .message-row img {
@@ -70,8 +84,22 @@
   font-size: 14px;
 }
 
+@keyframes fadeIn2 {
+  from {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .message-row--own {
+  opacity: 0;
   justify-content: flex-end;
+  animation: fadeIn2 0.6s linear forwards;
+  animation-delay: 1.2s;
 }
 
 .message-row--own .message__bubble {
@@ -96,6 +124,7 @@
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply__column:first-child {
@@ -113,6 +142,7 @@
   border: var(--border-line);
   border-radius: 20px;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply i {
@@ -146,4 +176,25 @@
 .reply__column button:focus,
 .reply__column button:active {
   outline: none;
+}
+
+.reply .reply__column:first-child,
+.reply .fa-smile,
+.reply button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-smile,
+.reply:focus-within button {
+  opacity: 0;
+}
+
+.reply:focus-within input {
+  width: 92vw;
+  transform: translateX(-10%) translateY(-80px);
+}
+
+.reply:focus-within {
+  transform: translateY(80px);
 }

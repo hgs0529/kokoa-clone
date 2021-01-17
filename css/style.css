@@ -20,6 +20,10 @@
 @import "screens/settings.css";
 @import "screens/chat.css";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Noto Sans", sans-serif;
   margin-top: 30px;
