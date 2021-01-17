@@ -22,25 +22,19 @@
       </div>
     </div>
 
-    <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
-      <div class="screen-header__icons">
-        <span><i class="fas fa-search fa-lg"></i></span>
-        <span><i class="fas fa-music fa-lg"></i></span>
-        <span><i class="fas fa-cog fa-lg"></i></span>
+    <header class="screen-header friends-header">
+      <div class="screen-header__position">
+        <h1 class="screen-header__title">Friends</h1>
+        <div class="screen-header__icons">
+          <span><i class="fas fa-search fa-lg"></i></span>
+          <span><i class="fas fa-music fa-lg"></i></span>
+          <span><i class="fas fa-cog fa-lg"></i></span>
+        </div>
       </div>
-    </header>
-
-    <a id="friends-display-link">
-      <i class="fas fa-info-circle"></i> Friends' Names Display
-      <i class="fas fa-chevron-right fa-xs"></i>
-    </a>
-
-    <main class="friends-screen">
-      <div class="user-components">
+      <div class="user-components user-components__profile">
         <div class="user-components__column">
           <img
-            src="image/selfie.jpeg"
+            src="image/me.jpg"
             class="user-components__avatar user-components__avatar-xl"
           />
           <div class="user-components__text">
@@ -50,29 +44,121 @@
         </div>
         <div class="user-components__column"></div>
       </div>
+    </header>
+
+    <main class="component-screen friends-screen">
       <div class="friends-screen__channel">
         <div class="friends-screen__channel-header">
-          <span>Channel</span>
+          <span>Friends with Birthday</span>
           <i class="fas fa-chevron-up fa-xs"></i>
         </div>
         <div class="user-components">
           <div class="user-components__column">
             <img
-              src="image/selfie.jpeg"
+              src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20150514_33%2Fmkhjsk_1431606436791kQaJb_JPEG%2F5.jpg&type=sc960_832"
               class="user-components__avatar user-components__avatar-sm"
             />
             <div class="user-components__text">
               <h4
                 class="user-components__title user-components__title--not-bold"
               >
-                channel
+                Frodo
+              </h4>
+            </div>
+          </div>
+          <div class="user-components__column">
+            <div class="giftshop">
+              <span>Gift shop</span>
+              <i class="fas fa-gift fa-xs"></i>
+            </div>
+          </div>
+        </div>
+        <div class="user-components">
+          <div class="user-components__column">
+            <div class="user-components__avatar user-components__birthday">
+              <i class="fas fa-birthday-cake"></i>
+            </div>
+            <div class="user-components__text">
+              <h4
+                class="user-components__title user-components__title--not-bold"
+              >
+                View more birthdays
               </h4>
             </div>
           </div>
           <div class="user-components__column">
             <div>
-              <span>2</span>
+              <span>3</span>
               <i class="fas fa-chevron-right fa-xs"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>Friends 3</span>
+          <i class="fas fa-chevron-up fa-xs"></i>
+        </div>
+        <div class="user-components">
+          <div class="user-components__column">
+            <img
+              src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxNzAyMDFfMjA2%2FMDAxNDg1OTQ2MzYwNDMw.w9oqKwsUfrZV4VYRmG6-GB2hnk_c5akH_0Iqq95Vj6Ug.PtN70XYIny6iTFqhu0qLbdMmdY1fTMnWHsVrKyM8mPgg.PNG.jihun-2006%2F1484288481808.png&type=sc960_832"
+              class="user-components__avatar user-components__avatar-sm"
+            />
+            <div class="user-components__text">
+              <h4
+                class="user-components__title user-components__title--not-bold"
+              >
+                Lion
+              </h4>
+            </div>
+          </div>
+          <div class="user-components__column">
+            <div class="friends-song">
+              <span>Spotlight-BOBBY</span>
+              <i class="fas fa-play fa-xs"></i>
+            </div>
+          </div>
+        </div>
+        <div class="user-components">
+          <div class="user-components__column">
+            <img
+              src="https://d1telmomo28umc.cloudfront.net/media/public/avatars/serranoarevalo-avatar_rdjur3A.jpg"
+              class="user-components__avatar user-components__avatar-sm"
+            />
+            <div class="user-components__text">
+              <h4
+                class="user-components__title user-components__title--not-bold"
+              >
+                Nico
+              </h4>
+            </div>
+          </div>
+          <div class="user-components__column">
+            <div>
+              <!-- <span>2</span>
+              <i class="fas fa-chevron-right fa-xs"></i> -->
+            </div>
+          </div>
+        </div>
+        <div class="user-components">
+          <div class="user-components__column">
+            <img
+              src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20150514_33%2Fmkhjsk_1431606436791kQaJb_JPEG%2F5.jpg&type=sc960_832"
+              class="user-components__avatar user-components__avatar-sm"
+            />
+            <div class="user-components__text">
+              <h4
+                class="user-components__title user-components__title--not-bold"
+              >
+                Frodo
+              </h4>
+            </div>
+          </div>
+          <div class="user-components__column">
+            <div class="giftshop">
+              <span>Birthday!</span>
+              <i class="fas fa-birthday-cake fa-xs"></i>
             </div>
           </div>
         </div>
@@ -88,7 +174,7 @@
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
-            <span class="nav__notification badge">1</span>
+            <span class="nav__dot dot"></span>
             <i class="far fa-comment fa-2x"></i>
           </a>
         </li>
@@ -107,7 +193,7 @@
     </nav>
 
     <div class="splash-screen">
-      <i class="fas fa-comment"></i>
+      <i class="fas fa-fingerprint"></i>
     </div>
 
     <script

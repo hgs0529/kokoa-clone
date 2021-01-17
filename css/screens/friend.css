@@ -1,53 +1,103 @@
-#friends-display-link {
-  text-align: center;
-  display: block;
-  background-color: #fafafa;
-  padding: 18px 0px;
-  margin-bottom: 15px;
-  margin-top: -15px;
+.friends-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
 }
-#friends-display-link i {
-  color: rgba(0, 0, 0, 0.3);
+
+.friends-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+@keyframes screenUp {
+  from {
+    opacity: 0;
+    transform: translateY(1000px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(10px);
+  }
 }
 
 .friends-screen {
-  margin: 0px var(--horizontal-space);
-}
-
-.friends-screen__channel {
-  margin-top: 25px;
-  border-top: var(--border-line);
-  padding-top: 15px;
+  animation: screenUp 1.5s ease-in-out forwards;
+  animation-delay: 2s;
+  height: 650px;
 }
 
 .friends-screen__channel-header {
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
   color: var(--gray);
 }
 
 @keyframes hideSplashScreen {
-  from {
+  0% {
     opacity: 1;
   }
-  to {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+    color: greenyellow;
+  }
+  100% {
     opacity: 0;
     visibility: hidden;
+    color: greenyellow;
   }
 }
 
 .splash-screen {
+  padding-bottom: 70px;
   position: absolute;
-  background-color: var(--yellow);
+  background: rgba(155, 155, 155, 0.55);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   height: 100vh;
   width: 100vw;
   top: 0;
   z-index: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: 132px;
-  animation: hideSplashScreen 0.4s ease-in-out forwards;
-  animation-delay: 1.5s;
+  align-items: flex-end;
+  font-size: 50px;
+  color: var(--gray);
+  animation: hideSplashScreen 2s ease-in-out forwards;
+}
+
+.giftshop {
+  border: #fd79a8 1px solid;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.giftshop i {
+  color: #fd79a8;
+}
+
+.friends-song {
+  border: #55efc4 1px solid;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.friends-song i {
+  color: #55efc4;
 }

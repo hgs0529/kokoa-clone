@@ -22,23 +22,21 @@
       </div>
     </div>
 
-    <header class="screen-header">
-      <h1 class="screen-header__title">More</h1>
-      <div class="screen-header__icons">
-        <span><i class="fas fa-search fa-lg"></i></span>
-        <span><i class="fas fa-music fa-lg"></i></span>
-        <span>
-          <a href="settings.html"><i class="fas fa-cog fa-lg"></i></a>
-        </span>
-        <span class="screen-header__dot dot"></span>
+    <header class="screen-header find-header">
+      <div class="screen-header__position">
+        <h1 class="screen-header__title">More</h1>
+        <div class="screen-header__icons">
+          <span><i class="fas fa-search fa-lg"></i></span>
+          <span>
+            <a href="settings.html"><i class="fas fa-cog fa-lg"></i></a>
+          </span>
+          <span class="screen-header__dot dot"></span>
+        </div>
       </div>
-    </header>
-
-    <main class="main-screen more-screen">
-      <div class="user-components">
+      <div class="user-components user-components__profile">
         <div class="user-components__column">
           <img
-            src="image/selfie.jpeg"
+            src="image/me.jpg"
             class="user-components__avatar user-components__avatar-xl"
           />
           <div class="user-components__text">
@@ -47,9 +45,7 @@
             <span class="badge-info">!</span>
           </div>
         </div>
-        <div class="user-components__column">
-          <i class="far fa-comment-alt fa-2x"></i>
-        </div>
+        <div class="user-components__column"></div>
       </div>
       <div class="icon-row">
         <div class="icon-row__icon">
@@ -69,6 +65,9 @@
           <span>Account</span>
         </div>
       </div>
+    </header>
+
+    <main class="component-screen more-screen">
       <div class="more-suggestions">
         <h4 class="more-suggestions__title">Suggestions</h4>
         <div class="more-suggestions__icons">
@@ -78,6 +77,29 @@
             </div>
             <span class="more-suggestions__icon-text">Kokoa Story</span>
           </div>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-paw fa-2x"></i>
+            </div>
+            <span class="more-suggestions__icon-text">Kokoa Friends</span>
+          </div>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-cat fa-2x"></i>
+            </div>
+            <span class="more-suggestions__icon-text">Friends Gem</span>
+          </div>
+        </div>
+      </div>
+      <div class="more-weather">
+        <h4 class="more-weather__location">incheon</h4>
+        <div class="more-weather__info">
+          <i class="fas fa-cloud"></i>
+          <div class="more-weather__text">
+            <span>-2˚</span>
+            <span>Watch out for icy roads</span>
+          </div>
+          <i class="fas fa-map-marker-alt"></i>
         </div>
       </div>
     </main>
@@ -86,12 +108,12 @@
       <ul class="nav__list">
         <li class="nav__btn">
           <a class="nav__link" href="friends.html"
-            ><i class="far fa-user fa-2x"></i
+            ><i class="fas fa-user fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
-            <span class="nav__notification badge">1</span>
+            <span class="nav__dot dot"></span>
             <i class="far fa-comment fa-2x"></i>
           </a>
         </li>

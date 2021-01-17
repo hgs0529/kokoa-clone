@@ -1,5 +1,11 @@
 .user-components {
   justify-content: space-between;
+  background-color: white;
+  border-radius: 30px;
+  padding: 10px;
+  box-shadow: 1px 5px 5px 1px rgba(0, 0, 0, 0.2);
+  color: var(--gray);
+  margin-bottom: 10px;
 }
 
 .user-components,
@@ -55,4 +61,59 @@
 .user-components__text {
   border: salmon;
   position: relative;
+}
+
+.user-components__birthday {
+  background-color: #fd79a8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+}
+
+.user-components__birthday i {
+  font-size: 30px;
+  color: white;
+}
+
+@keyframes screenUp {
+  from {
+    opacity: 0;
+    transform: translateY(1000px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+}
+
+.component-screen {
+  padding: 20px;
+  height: 760px;
+  width: 100%;
+  position: absolute;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  bottom: 10px;
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  opacity: 0;
+  animation: screenUp 1.5s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+.user-components__profile {
+  background-color: transparent;
+  box-shadow: none;
+  margin-top: 20px;
+  color: var(--gray);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-shadow: none;
 }
