@@ -79,7 +79,7 @@
   font-size: 50px;
   color: var(--gray);
   padding-top: 80px;
-  animation: hideSplashScreen 2s ease-in-out forwards;
+  animation: hideSplashScreen 2s ease-in-out;
 }
 
 .giftshop {
