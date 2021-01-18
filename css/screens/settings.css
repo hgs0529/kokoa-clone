@@ -1,11 +1,11 @@
 .settings-list {
   width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .settings-setting {
   width: 100%;
   padding: 20px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 18px;
   display: flex;
   align-items: center;
