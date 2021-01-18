@@ -8,6 +8,7 @@
   padding: 5px 3px;
   z-index: 1;
   color: black;
+  background-color: #f9f9fa;
 }
 .status-bar__column {
   width: 33%;

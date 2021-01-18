@@ -21,53 +21,52 @@
         <i class="fas fa-bolt"></i>
       </div>
     </div>
-
-    <header class="screen-header find-header">
-      <div class="screen-header__position">
-        <h1 class="screen-header__title">More</h1>
-        <div class="screen-header__icons">
-          <span><i class="fas fa-search fa-lg"></i></span>
-          <span>
-            <a href="settings.html"><i class="fas fa-cog fa-lg"></i></a>
-          </span>
-          <span class="screen-header__dot dot"></span>
-        </div>
-      </div>
-      <div class="user-components user-components__profile">
-        <div class="user-components__column">
-          <img
-            src="image/me.jpg"
-            class="user-components__avatar user-components__avatar-xl"
-          />
-          <div class="user-components__text">
-            <h4 class="user-components__title">EDEN HWANG</h4>
-            <h6 class="user-components__subtitle">+ 123 312 123</h6>
-            <span class="badge-info">!</span>
+    <main class="component-screen more-screen">
+      <header class="screen-header find-header">
+        <div class="screen-header__position">
+          <h1 class="screen-header__title">More</h1>
+          <div class="screen-header__icons">
+            <span><i class="fas fa-search fa-lg"></i></span>
+            <span>
+              <a href="settings.html"><i class="fas fa-cog fa-lg"></i></a>
+            </span>
+            <span class="screen-header__dot dot"></span>
           </div>
         </div>
-        <div class="user-components__column"></div>
-      </div>
-      <div class="icon-row">
-        <div class="icon-row__icon">
-          <i class="far fa-calendar"></i>
-          <span>Calendar</span>
+        <div class="user-components user-components__profile">
+          <div class="user-components__column">
+            <img
+              src="image/me.jpg"
+              class="user-components__avatar user-components__avatar-xl"
+            />
+            <div class="user-components__text">
+              <h4 class="user-components__title">EDEN HWANG</h4>
+              <h6 class="user-components__subtitle">+ 123 312 123</h6>
+              <span class="badge-info">!</span>
+            </div>
+          </div>
+          <div class="user-components__column"></div>
         </div>
-        <div class="icon-row__icon">
-          <i class="far fa-smile-beam"></i>
-          <span>Emoticons</span>
+        <div class="icon-row">
+          <div class="icon-row__icon">
+            <i class="far fa-calendar"></i>
+            <span>Calendar</span>
+          </div>
+          <div class="icon-row__icon">
+            <i class="far fa-smile-beam"></i>
+            <span>Emoticons</span>
+          </div>
+          <div class="icon-row__icon">
+            <i class="fas fa-paint-roller"></i>
+            <span>Themes</span>
+          </div>
+          <div class="icon-row__icon">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <span>Account</span>
+          </div>
         </div>
-        <div class="icon-row__icon">
-          <i class="fas fa-paint-roller"></i>
-          <span>Themes</span>
-        </div>
-        <div class="icon-row__icon">
-          <i class="fas fa-file-invoice-dollar"></i>
-          <span>Account</span>
-        </div>
-      </div>
-    </header>
+      </header>
 
-    <main class="component-screen more-screen">
       <div class="more-suggestions">
         <h4 class="more-suggestions__title">Suggestions</h4>
         <div class="more-suggestions__icons">
@@ -92,14 +91,16 @@
         </div>
       </div>
       <div class="more-weather">
-        <h4 class="more-weather__location">incheon</h4>
+        <h3>weather</h3>
         <div class="more-weather__info">
-          <i class="fas fa-cloud"></i>
-          <div class="more-weather__text">
+          <h4>Incheon</h4>
+          <div class="more-weather__icons">
+            <i class="fas fa-cloud"></i>
             <span>-2˚</span>
+          </div>
+          <div class="more-weather__text">
             <span>Watch out for icy roads</span>
           </div>
-          <i class="fas fa-map-marker-alt"></i>
         </div>
       </div>
     </main>
@@ -130,6 +131,10 @@
         </li>
       </ul>
     </nav>
+
+    <div id="no-mobile">
+      <span>Your screen is too big ㅠㅠ</span>
+    </div>
 
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
