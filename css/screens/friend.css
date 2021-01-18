@@ -14,19 +14,18 @@
 
 @keyframes screenUp {
   from {
+    transform: scale(1.3);
     opacity: 0;
-    transform: translateY(1000px);
   }
   to {
+    transform: scale(1);
     opacity: 1;
-    transform: translateY(10px);
   }
 }
 
 .friends-screen {
   animation: screenUp 1.5s ease-in-out forwards;
   animation-delay: 2s;
-  height: 650px;
 }
 
 .friends-screen__channel-header {
@@ -53,11 +52,13 @@
   80% {
     opacity: 1;
     color: greenyellow;
+    transform: scale(1);
   }
   100% {
     opacity: 0;
     visibility: hidden;
     color: greenyellow;
+    transform: scale(1.3);
   }
 }
 
