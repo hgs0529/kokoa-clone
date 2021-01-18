@@ -110,3 +110,7 @@
   backdrop-filter: blur(5.5px);
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
+
+.chats-screen {
+  height: 80vh;
+}
