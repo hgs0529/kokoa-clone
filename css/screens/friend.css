@@ -51,13 +51,11 @@
   80% {
     opacity: 1;
     color: greenyellow;
-    transform: scale(1);
   }
   100% {
     opacity: 0;
     visibility: hidden;
     color: greenyellow;
-    transform: scale(1.3);
   }
 }
 
