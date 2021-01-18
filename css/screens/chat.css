@@ -1,5 +1,6 @@
 .chat-screen {
   height: 100vh;
+  padding: 0;
 }
 
 .chat-screen .alt-header {
