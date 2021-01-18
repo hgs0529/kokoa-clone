@@ -86,6 +86,7 @@
 }
 
 .component-screen {
+  width: 100vw;
   margin: 30px;
   padding: 20px;
   border-radius: 20px;
